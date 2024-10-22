@@ -26,9 +26,13 @@ namespace Master_pol_Drachev.Elements
             {
                 InitializeComponent();
                 partners = item;
+                int skidCount = PartnerProductsContext.AllPartnerProducts().Find(x => x.id == item.id).count;
                 type_text.Content = TypePartnersContext.AllTypePartners().Find(x => x.id == item.type).name;
                 name_text.Content = "| " + item.name;
-                skidka_text.Content = "10%";
+                if (skidCount < 10000) skidka_text.Content = "0%";
+                if (skidCount > 10000 && skidCount < 50000) skidka_text.Content = "5%";
+                if (skidCount > 50000 && skidCount < 300000) skidka_text.Content = "10%";
+                if (skidCount > 300000) skidka_text.Content = "15%";
                 fio_text.Content = item.fio;
                 phone_text.Content = item.contact;
                 rating_text.Content = "Рейтинг: " + item.rating;
