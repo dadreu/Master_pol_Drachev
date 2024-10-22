@@ -13,7 +13,7 @@ namespace Master_pol_Drachev.Classes
             partners
         }
         public List<PartnersContext> AllPartners = PartnersContext.AllPartners();
-        public static readonly string connection = "server=localhost;port=3308;database=master_pol;uid=root;";
+        public static readonly string connection = "server=student.permaviat.ru;port=3306;database=ISP_21_2_5;user=ISP_21_2_5;password=63Jl2CDGz#";
         public static MySqlConnection OpenConnection()
         {
             try
