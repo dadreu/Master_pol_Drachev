@@ -25,7 +25,7 @@ namespace Master_pol_Drachev
         {
             InitializeComponent();
             init = this;
-            OpenPage(new Pages.());
+            OpenPage(new Pages.Main());
         }
         public void OpenPage(Page Page)
         {
