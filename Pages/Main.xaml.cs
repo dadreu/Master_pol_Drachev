@@ -31,7 +31,7 @@ namespace Master_pol_Drachev.Pages
             parrent.Children.Clear();
             foreach (PartnersContext item in partnersContexts)
             {
-                parrent.Children.Add(new Elements.);
+                parrent.Children.Add(new Elements.PartnersItm(item));
             }
         }
     }
