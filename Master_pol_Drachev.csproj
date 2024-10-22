@@ -9,7 +9,10 @@
   <ItemGroup>
     <Folder Include="Pages\" />
     <Folder Include="Elements\" />
-    <Folder Include="Classes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
   </ItemGroup>
 
 </Project>
