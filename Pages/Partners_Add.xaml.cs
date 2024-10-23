@@ -59,7 +59,7 @@ namespace Master_pol_Drachev.Pages
                 fio_text.Text = loadPartner.fio;
                 phone_text.Text = loadPartner.phone.ToString();
                 email_text.Text = loadPartner.email;
-                inn_text.Text = loadPartner.email;
+                inn_text.Text = loadPartner.inn.ToString();
             }
         }
 
