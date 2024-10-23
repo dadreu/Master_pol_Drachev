@@ -34,5 +34,10 @@ namespace Master_pol_Drachev.Pages
                 parrent.Children.Add(new Elements.PartnersItm(item));
             }
         }
+
+        private void AddPartner(object sender, RoutedEventArgs e)
+        {
+            MainWindow.init.OpenPage(new Pages.Partners_Add(partners));
+        }
     }
 }

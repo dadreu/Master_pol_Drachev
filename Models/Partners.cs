@@ -9,24 +9,24 @@ namespace Master_pol_Drachev.Models
         public int id { get; set; }
         public int type { get; set; }
         public string name { get; set; }
+        public string fio { get; set; }
         public string adres { get; set; }
         public long inn { get; set; }
-        public string fio { get; set; }
-        public string contact { get; set; }
+        public long phone { get; set; }
+        public string email { get; set; }
         public int rating { get; set; }
-        public string places { get; set; }
         public Partners() { }
-        public Partners(int id, int type, string name, string adres, long inn, string fio, string contact, int rating, string places)
+        public Partners(int id, int type, string name, string fio, string adres, long inn, long phone, string email, int rating)
         {
             this.id = id;
             this.type = type;
+            this.fio = fio;
             this.name = name;
             this.adres = adres;
             this.inn = inn;
-            this.fio = fio;
-            this.contact = contact;
+            this.phone = phone;
+            this.email = email;
             this.rating = rating;
-            this.places = places;
         }
     }
 }
